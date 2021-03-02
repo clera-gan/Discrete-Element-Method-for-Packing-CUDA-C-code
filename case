@@ -1,0 +1,11 @@
+#!/bin/bash
+#PBS -N algo250
+#PBS -l nodes=1:ppn=8
+#PBS -q normal
+#PBS -l walltime=12:00:00,mem=900MB
+##PBS -l ncpus=1
+
+cd $PBS_O_WORKDIR
+
+./gpusphere>>output.dat
+
